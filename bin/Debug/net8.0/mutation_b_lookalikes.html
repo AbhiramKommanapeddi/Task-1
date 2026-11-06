@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head><title>Mutation B: Lookalike Fields Disambiguation</title></head>
+<body style='font-family: sans-serif; padding: 20px;'>
+  <h2>Complex Profile Form (Lookalikes Challenge)</h2>
+  <form action='#' method='post'>
+    
+    <!-- Multiple similar name text boxes -->
+    <div>
+      <label for='user_fullname'>Full Name</label>
+      <input type='text' id='user_fullname' name='fullName' placeholder='Full Name' />
+    </div>
+    
+    <div>
+      <label for='user_middlename'>Middle Name</label>
+      <input type='text' id='user_middlename' name='middleName' placeholder='Middle Name' />
+    </div>
+
+    <div>
+      <!-- The Target: First Name -->
+      <label for='user_firstname'>First Name *</label>
+      <input type='text' id='user_firstname' name='user_first_name' placeholder='First Name' />
+    </div>
+
+    <div>
+      <label for='user_lastname'>Last Name *</label>
+      <input type='text' id='user_lastname' name='lastName' placeholder='Last Name / Surname' />
+    </div>
+
+    <!-- Multiple radio groups -->
+    <fieldset>
+      <legend>Membership Tier</legend>
+      <label><input type='radio' name='tier' value='Free'> Free</label>
+      <label><input type='radio' name='tier' value='Pro'> Pro</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Gender</legend>
+      <label><input type='radio' name='gender_selection' value='Female'> Female</label>
+      <label><input type='radio' name='gender_selection' value='Male'> Male</label>
+      <label><input type='radio' name='gender_selection' value='Transgender'> Transgender</label>
+    </fieldset>
+
+    <!-- Multiple dropdowns: Country vs State vs City -->
+    <div>
+      <label for='country_select'>Country</label>
+      <select id='country_select' name='country'>
+        <option>United States</option>
+        <option>India</option>
+        <option>United Kingdom</option>
+      </select>
+    </div>
+
+    <div>
+      <!-- The Target: State -->
+      <label for='state_select'>State / Region</label>
+      <select id='state_select' name='state_or_province'>
+        <option value=''>-- Choose State --</option>
+        <option value='California'>California</option>
+        <option value='India'>India</option>
+        <option value='Ontario'>Ontario</option>
+      </select>
+    </div>
+
+    <div>
+      <label for='city_select'>City</label>
+      <select id='city_select' name='city'>
+        <option>San Jose</option>
+        <option>Hyderabad</option>
+      </select>
+    </div>
+
+    <button type='submit'>Register</button>
+  </form>
+</body>
+</html>

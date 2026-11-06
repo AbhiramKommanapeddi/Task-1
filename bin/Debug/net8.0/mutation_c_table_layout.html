@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><title>Mutation C: Table Layout without IDs</title></head>
+<body style='font-family: sans-serif; padding: 20px;'>
+  <h2>Account Setup (Legacy Table Layout)</h2>
+  <form action='#'>
+    <table border='0' cellpadding='8'>
+      <tr>
+        <td><strong>First Name:</strong></td>
+        <td><input type='text' name='fn' placeholder='Enter given name here' /></td>
+      </tr>
+      <tr>
+        <td><strong>Gender:</strong></td>
+        <td>
+          <input type='radio' name='rad_gender' value='Male' /> <span>Male</span> &nbsp;
+          <input type='radio' name='rad_gender' value='Female' /> <span>Female</span> &nbsp;
+          <input type='radio' name='rad_gender' value='Transgender' /> <span>Transgender</span>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>State:</strong></td>
+        <td>
+          <select name='user_state'>
+            <option value=''>Please select your state</option>
+            <option value='Texas'>Texas</option>
+            <option value='India'>India</option>
+            <option value='Washington'>Washington</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <br/>
+    <input type='submit' value='Submit Application' />
+  </form>
+</body>
+</html>
